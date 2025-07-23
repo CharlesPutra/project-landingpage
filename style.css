@@ -93,15 +93,359 @@
       /* pastikan teks tetap terbaca */
       transition: 0.3s;
   }
-  .btn-hover-transparent {
-    transition: all 0.3s ease;
-}
 
-/* Saat hover: background transparan, text dan border jadi warna merah */
-.btn-hover-transparent:hover {
-    background-color: transparent;
-    color: #dc3545; /* warna merah Bootstrap danger */
-    border: 1px solid #dc3545;
-}
+  .btn-hover-transparent {
+      transition: all 0.3s ease;
+  }
+
+  /* Saat hover: background transparan, text dan border jadi warna merah */
+  .btn-hover-transparent:hover {
+      background-color: transparent;
+      color: #dc3545;
+      /* warna merah Bootstrap danger */
+      border: 1px solid #dc3545;
+  }
 
   /* button hover end */
+
+  /* sponsor atau perusahaan yang sedang bekerja sama */
+  .sponsor-wrapper {
+      overflow: hidden;
+      background-color: #f8f9fa;
+      border: 1px solid #ddd;
+      padding: 8px 0;
+      position: relative;
+  }
+
+  .sponsor-track {
+      display: flex;
+      width: max-content;
+      animation: scroll-left 25s linear infinite;
+  }
+
+  .sponsor-item {
+      flex: 0 0 auto;
+      margin: 0;
+      /* Hapus celah antar logo */
+  }
+
+  .sponsor-item img {
+      height: 35px;
+      /* Diperkecil */
+      width: auto;
+      display: block;
+      padding: 0 15px;
+      /* Tambahkan padding kiri-kanan kecil */
+      object-fit: contain;
+  }
+
+  /* Animasi jalan ke kiri */
+  @keyframes scroll-left {
+      0% {
+          transform: translateX(0%);
+      }
+
+      100% {
+          transform: translateX(-50%);
+      }
+  }
+
+  @media (max-width: 576px) {
+      .sponsor-item img {
+          height: 28px;
+          padding: 0 10px;
+      }
+  }
+
+  /* sponsor atau perusahaan yang sedang bekerja sama end */
+
+  /* macam macam jurusan */
+  /* From Uiverse.io by ElSombrero2 */
+  /* .card {
+      overflow: visible;
+      width: 190px;
+      height: 254px;
+  }
+
+  .content {
+      width: 100%;
+      height: 100%;
+      transform-style: preserve-3d;
+      transition: transform 300ms;
+      box-shadow: 0px 0px 10px 1px #000000ee;
+      border-radius: 5px;
+  }
+
+  .front,
+  .back {
+      background-color: #151515;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+      border-radius: 5px;
+      overflow: hidden;
+  }
+
+  .back {
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+  }
+
+  .back::before {
+      position: absolute;
+      content: ' ';
+      display: block;
+      width: 160px;
+      height: 160%;
+      background: linear-gradient(90deg, transparent, #ff9966, #ff9966, #ff9966, #ff9966, transparent);
+      animation: rotation_481 5000ms infinite linear;
+  }
+
+  .back-content {
+      position: absolute;
+      width: 99%;
+      height: 99%;
+      background-color: #151515;
+      border-radius: 5px;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+  }
+
+  .card:hover .content {
+      transform: rotateY(180deg);
+  }
+
+  @keyframes rotation_481 {
+      0% {
+          transform: rotateZ(0deg);
+      }
+
+      0% {
+          transform: rotateZ(360deg);
+      }
+  }
+
+  .front {
+      transform: rotateY(180deg);
+      color: white;
+  }
+
+  .front .front-content {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  }
+
+  .front-content .badge {
+      background-color: #00000055;
+      padding: 2px 10px;
+      border-radius: 10px;
+      backdrop-filter: blur(2px);
+      width: fit-content;
+  }
+
+  .description {
+      box-shadow: 0px 0px 10px 5px #00000088;
+      width: 100%;
+      padding: 10px;
+      background-color: #00000099;
+      backdrop-filter: blur(5px);
+      border-radius: 5px;
+  }
+
+  .title {
+      font-size: 11px;
+      max-width: 100%;
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .title p {
+      width: 50%;
+  }
+
+  .card-footer {
+      color: #ffffff88;
+      margin-top: 5px;
+      font-size: 8px;
+  }
+
+  .front .img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+  }
+
+  .circle {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      background-color: #ffbb66;
+      position: relative;
+      filter: blur(15px);
+      animation: floating 2600ms infinite linear;
+  }
+
+  #bottom {
+      background-color: #ff8866;
+      left: 50px;
+      top: 0px;
+      width: 150px;
+      height: 150px;
+      animation-delay: -800ms;
+  }
+
+  #right {
+      background-color: #ff2233;
+      left: 160px;
+      top: -80px;
+      width: 30px;
+      height: 30px;
+      animation-delay: -1800ms;
+  }
+
+  @keyframes floating {
+      0% {
+          transform: translateY(0px);
+      }
+
+      50% {
+          transform: translateY(10px);
+      }
+
+      100% {
+          transform: translateY(0px);
+      }
+  } */
+
+  /* macam macam jurusan end */
+
+  /* card jurusan baru  */
+  .card-wrapper {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      justify-content: center;
+  }
+
+  .card {
+      position: relative;
+      background-color: #ffffff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+      text-decoration: none;
+      color: inherit;
+      cursor: pointer;
+      height: 250px;
+  }
+
+  .card:hover {
+      transform: translateY(-5px);
+  }
+
+  .card-image {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+  }
+
+  .content {
+      padding: 10px;
+      text-align: center;
+  }
+
+  .badge {
+      background-color: #20c997;
+      color: white;
+      padding: 4px 8px;
+      border-radius: 12px;
+      font-size: 12px;
+      display: inline-block;
+      margin-bottom: 5px;
+  }
+
+  .title {
+      font-size: 14px;
+      font-weight: bold;
+      color: #343a40;
+      margin-top: 5px;
+      min-height: 36px;
+  }
+
+  .logo {
+      margin-top: 10px;
+      width: 30px;
+      height: 30px;
+  }
+
+  /* Click Me Text on Hover */
+  .card::after {
+      content: 'Click Me';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(32, 201, 151, 0.9);
+      color: white;
+      padding: 8px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 25px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      pointer-events: none;
+      z-index: 2;
+  }
+
+  .card:hover::after {
+      opacity: 1;
+  }
+
+  .card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.3);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      z-index: 1;
+  }
+
+  .card:hover::before {
+      opacity: 1;
+  }
+
+
+  /* Responsive Grid */
+  @media (max-width: 992px) {
+      .card-wrapper {
+          grid-template-columns: repeat(2, 1fr);
+      }
+  }
+
+  @media (max-width: 576px) {
+      .card-wrapper {
+          grid-template-columns: 1fr;
+      }
+  }
+
+
+  /* card jurusan baru end */
