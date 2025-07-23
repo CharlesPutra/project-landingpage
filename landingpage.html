@@ -14,149 +14,245 @@
 
 <body>
     <!-- navbar  -->
-    <nav class="navbar navbar sticky-top navbar-expand-lg navbar-custom">
+    <nav class="navbar navbar-expand-lg navbar-custom navbar-transparent sticky-top">
+
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="img/smk17.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
-                smk17muncar
+                <img src="img/smk17.png" alt="Bootstrap" width="40" height="40">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav gap-3 ms-auto">
+                <ul class="navbar-nav ">
                     <li class="nav-item">
-                        <a class="nav-link " href="#">Beranda</a>
+                        <a class="nav-link " href="#home">Beranda</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Tentang</a>
+                        <a class="nav-link" href="#tentang">Tentang</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Kontak</a>
                     </li>
                 </ul>
             </div>
+            <button type="button" class="btn btn-danger ">Sign In</button>
         </div>
     </nav>
     <!-- navbar end -->
 
     <!-- img opacity -->
-    <div class="">
-        <div class="image-container">
-            <img src="img/siswa.jpeg" class="img-fluid" alt="Siswa SMK">
-            <div class="image-text">Lorem ipsum dolor sit amet. <br>
-                <button type="button" class="btn btn-danger btn-hover-transparent">Danger</button>
+    <section id="home">
+
+        <div class="home-section">
+            <div class="image-container">
+                <img src="img/siswa.jpeg" class="img-fluid" alt="Siswa SMK">
+                <div class="image-text">Lorem ipsum dolor sit amet. <br>
+                    <button type="button" class="btn btn-danger btn-hover-transparent">Danger</button>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- img opacity end -->
+
+        <!-- sponsor atau perusahaan yang sedang bekarja sama -->
+        <div class="sponsor-wrapper">
+            <div class="sponsor-track">
+                <!-- Gandakan agar animasi loop seamless -->
+                <div class="sponsor-item"><img src="img/siswa.jpeg" alt="Sponsor 1"></div>
+                <div class="sponsor-item"><img src="img/smk17.png" alt="Sponsor 2"></div>
+                <div class="sponsor-item"><img src="img/siswa.jpeg" alt="Sponsor 3"></div>
+                <div class="sponsor-item"><img src="img/smk17.png" alt="Sponsor 4"></div>
+                <div class="sponsor-item"><img src="img/siswa.jpeg" alt="Sponsor 1"></div>
+                <div class="sponsor-item"><img src="img/smk17.png" alt="Sponsor 2"></div>
+                <div class="sponsor-item"><img src="img/siswa.jpeg" alt="Sponsor 3"></div>
+                <div class="sponsor-item"><img src="img/smk17.png" alt="Sponsor 4"></div>
+                <div class="sponsor-item"><img src="img/siswa.jpeg" alt="Sponsor 1"></div>
+                <div class="sponsor-item"><img src="img/smk17.png" alt="Sponsor 2"></div>
+                <div class="sponsor-item"><img src="img/siswa.jpeg" alt="Sponsor 3"></div>
+                <div class="sponsor-item"><img src="img/smk17.png" alt="Sponsor 4"></div>
+                <div class="sponsor-item"><img src="img/siswa.jpeg" alt="Sponsor 1"></div>
+                <div class="sponsor-item"><img src="img/smk17.png" alt="Sponsor 2"></div>
+                <div class="sponsor-item"><img src="img/siswa.jpeg" alt="Sponsor 3"></div>
+                <div class="sponsor-item"><img src="img/smk17.png" alt="Sponsor 4"></div>
+                <div class="sponsor-item"><img src="img/siswa.jpeg" alt="Sponsor 1"></div>
+                <div class="sponsor-item"><img src="img/smk17.png" alt="Sponsor 2"></div>
+                <div class="sponsor-item"><img src="img/siswa.jpeg" alt="Sponsor 3"></div>
+                <div class="sponsor-item"><img src="img/smk17.png" alt="Sponsor 4"></div>
+                <div class="sponsor-item"><img src="img/siswa.jpeg" alt="Sponsor 1"></div>
+                <div class="sponsor-item"><img src="img/smk17.png" alt="Sponsor 2"></div>
+                <div class="sponsor-item"><img src="img/siswa.jpeg" alt="Sponsor 3"></div>
+                <div class="sponsor-item"><img src="img/smk17.png" alt="Sponsor 4"></div>
+                <div class="sponsor-item"><img src="img/siswa.jpeg" alt="Sponsor 1"></div>
+                <div class="sponsor-item"><img src="img/smk17.png" alt="Sponsor 2"></div>
+                <div class="sponsor-item"><img src="img/siswa.jpeg" alt="Sponsor 3"></div>
+                <div class="sponsor-item"><img src="img/smk17.png" alt="Sponsor 4"></div>
+                <div class="sponsor-item"><img src="img/siswa.jpeg" alt="Sponsor 1"></div>
+                <div class="sponsor-item"><img src="img/smk17.png" alt="Sponsor 2"></div>
+                <div class="sponsor-item"><img src="img/siswa.jpeg" alt="Sponsor 3"></div>
+                <div class="sponsor-item"><img src="img/smk17.png" alt="Sponsor 4"></div>
+                <div class="sponsor-item"><img src="img/siswa.jpeg" alt="Sponsor 1"></div>
+                <div class="sponsor-item"><img src="img/smk17.png" alt="Sponsor 2"></div>
+                <div class="sponsor-item"><img src="img/siswa.jpeg" alt="Sponsor 3"></div>
+                <div class="sponsor-item"><img src="img/smk17.png" alt="Sponsor 4"></div>
+            </div>
+        </div>
+
+        <!-- sponsor atau perusahaan yang sedang bekarja sama end -->
+
+        <!-- berita atau pengumuman terbaru -->
+        <div class="container py-2">
+            <h2>Berita Terkini</h2>
+            <div class="container my-4">
+                <div id="carouselMini" class="carousel slide mx-auto" data-bs-ride="carousel" data-bs-interval="3000"
+                    style="max-width: 600px;">
+                    <div class="carousel-inner rounded shadow">
+                        <div class="carousel-item active">
+                            <img src="img/siswa.jpeg" class="d-block w-100 img-fluid" alt="Slide 1"
+                                style="height: 300px; object-fit: cover;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/smk17.png" class="d-block w-100 img-fluid" alt="Slide 2"
+                                style="height: 300px; object-fit: cover;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/siswa.jpeg" class="d-block w-100 img-fluid" alt="Slide 3"
+                                style="height: 300px; object-fit: cover;">
+                        </div>
+                    </div>
+
+                    <!-- Navigasi -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselMini"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselMini"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+
+                    <!-- Indikator -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselMini" data-bs-slide-to="0"
+                            class="active"></button>
+                        <button type="button" data-bs-target="#carouselMini" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carouselMini" data-bs-slide-to="2"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- berita atau pengumuman terbaru end -->
+
+
+
+    <!-- sejarah sekolah   -->
+    <section id="tentang" class="py-5">
+            <div class="container">
+        <div class="row align-items-center">
+            <!-- Gambar Sekolah -->
+            <div class="col-md-6 mb-4 mb-md-0">
+                <img src="img/smk17.png" alt="Sejarah Sekolah" class="img-fluid rounded shadow-sm">
             </div>
 
-        </div>
-    </div>
-    <!-- img opacity end -->
-
-    <!-- sponsor atau perusahaan yang sedang bekarja sama -->
-    <div class="sponsor-wrapper">
-        <div class="sponsor-track">
-            <!-- Gandakan agar animasi loop seamless -->
-            <div class="sponsor-item"><img src="img/siswa.jpeg" alt="Sponsor 1"></div>
-            <div class="sponsor-item"><img src="img/smk17.png" alt="Sponsor 2"></div>
-            <div class="sponsor-item"><img src="img/siswa.jpeg" alt="Sponsor 3"></div>
-            <div class="sponsor-item"><img src="img/smk17.png" alt="Sponsor 4"></div>
-            <div class="sponsor-item"><img src="img/siswa.jpeg" alt="Sponsor 1"></div>
-            <div class="sponsor-item"><img src="img/smk17.png" alt="Sponsor 2"></div>
-            <div class="sponsor-item"><img src="img/siswa.jpeg" alt="Sponsor 3"></div>
-            <div class="sponsor-item"><img src="img/smk17.png" alt="Sponsor 4"></div>
-            <div class="sponsor-item"><img src="img/siswa.jpeg" alt="Sponsor 1"></div>
-            <div class="sponsor-item"><img src="img/smk17.png" alt="Sponsor 2"></div>
-            <div class="sponsor-item"><img src="img/siswa.jpeg" alt="Sponsor 3"></div>
-            <div class="sponsor-item"><img src="img/smk17.png" alt="Sponsor 4"></div>
-            <div class="sponsor-item"><img src="img/siswa.jpeg" alt="Sponsor 1"></div>
-            <div class="sponsor-item"><img src="img/smk17.png" alt="Sponsor 2"></div>
-            <div class="sponsor-item"><img src="img/siswa.jpeg" alt="Sponsor 3"></div>
-            <div class="sponsor-item"><img src="img/smk17.png" alt="Sponsor 4"></div>
-            <div class="sponsor-item"><img src="img/siswa.jpeg" alt="Sponsor 1"></div>
-            <div class="sponsor-item"><img src="img/smk17.png" alt="Sponsor 2"></div>
-            <div class="sponsor-item"><img src="img/siswa.jpeg" alt="Sponsor 3"></div>
-            <div class="sponsor-item"><img src="img/smk17.png" alt="Sponsor 4"></div>
+            <!-- Konten Sejarah -->
+            <div class="col-md-6">
+                <h2 class="section-title">Sejarah SMK 17 Muncar</h2>
+                <p class="lead text-muted">
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, voluptatibus quasi.
+                </p>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe architecto laborum rem consequuntur adipisci, odio fuga voluptate cumque, rerum facere earum fugit eligendi, obcaecati eos hic iusto laudantium. Dignissimos, aspernatur!
+                </p>
+                <a href="#visi-misi" class="btn btn-primary mt-3">Lihat Visi & Misi</a>
+            </div>
         </div>
     </div>
 
-    <!-- sponsor atau perusahaan yang sedang bekarja sama end -->
+        <!-- sejarah sekolah  end -->
 
-    <!-- macam macam jurusan -->
-    <div class="container pt-3">
-        <h3>Macam-Macam Jurusan SMK17MUNCAR</h3><br>
 
-        <div class="card-wrapper">
 
-            <!-- AKL -->
-            <a href="jurusan/akl.html" class="card">
-                <img src="img/siswa.jpeg" alt="Jurusan AKL" class="card-image">
-                <div class="content">
-                    <small class="badge">AKUNTANSI</small>
-                    <div class="title">Akuntansi & Keuangan Lembaga</div>
-                    <img src="img/smk17.png" alt="Logo SMK17" class="logo">
-                </div>
-            </a>
 
-            <!-- RPL -->
-            <a href="jurusan/rpl.html" class="card">
-                <img src="img/siswa.jpeg" alt="Jurusan RPL" class="card-image">
-                <div class="content">
-                    <small class="badge">RPL</small>
-                    <div class="title">Rekayasa Perangkat Lunak</div>
-                    <img src="img/smk17.png" alt="Logo SMK17" class="logo">
-                </div>
-            </a>
 
-            <!-- BDP -->
-            <a href="jurusan/bdp.html" class="card">
-                <img src="img/siswa.jpeg" alt="Jurusan BDP" class="card-image">
-                <div class="content">
-                    <small class="badge">BDP</small>
-                    <div class="title">Bisnis & Pemasaran</div>
-                    <img src="img/smk17.png" alt="Logo SMK17" class="logo">
-                </div>
-            </a>
+        <!-- macam macam jurusan -->
+        <div class="container pt-3">
+            <h3>Macam-Macam Jurusan SMK17MUNCAR</h3><br>
 
-            <!-- PERHOTELAN -->
-            <a href="jurusan/perhotelan.html" class="card">
-                <img src="img/siswa.jpeg" alt="Jurusan PH" class="card-image">
-                <div class="content">
-                    <small class="badge">PH</small>
-                    <div class="title">Perhotelan</div>
-                    <img src="img/smk17.png" alt="Logo SMK17" class="logo">
-                </div>
-            </a>
+            <div class="card-wrapper">
 
-            <!-- TKR -->
-            <a href="jurusan/tkr.html" class="card">
-                <img src="img/siswa.jpeg" alt="Jurusan TKR" class="card-image">
-                <div class="content">
-                    <small class="badge">TKR</small>
-                    <div class="title">Teknik Kendaraan Ringan</div>
-                    <img src="img/smk17.png" alt="Logo SMK17" class="logo">
-                </div>
-            </a>
+                <!-- AKL -->
+                <a href="jurusan/akl.html" class="card">
+                    <img src="img/siswa.jpeg" alt="Jurusan AKL" class="card-image">
+                    <div class="content">
+                        <small class="badge">AKUNTANSI</small>
+                        <div class="title">Akuntansi & Keuangan Lembaga</div>
+                        <img src="img/smk17.png" alt="Logo SMK17" class="logo">
+                    </div>
+                </a>
 
-            <!-- TP -->
-            <a href="jurusan/tp.html" class="card">
-                <img src="img/siswa.jpeg" alt="Jurusan TP" class="card-image">
-                <div class="content">
-                    <small class="badge">TP</small>
-                    <div class="title">Teknik Pengelasan</div>
-                    <img src="img/smk17.png" alt="Logo SMK17" class="logo">
-                </div>
-            </a>
+                <!-- RPL -->
+                <a href="jurusan/rpl.html" class="card">
+                    <img src="img/siswa.jpeg" alt="Jurusan RPL" class="card-image">
+                    <div class="content">
+                        <small class="badge">RPL</small>
+                        <div class="title">Rekayasa Perangkat Lunak</div>
+                        <img src="img/smk17.png" alt="Logo SMK17" class="logo">
+                    </div>
+                </a>
 
+                <!-- BDP -->
+                <a href="jurusan/bdp.html" class="card">
+                    <img src="img/siswa.jpeg" alt="Jurusan BDP" class="card-image">
+                    <div class="content">
+                        <small class="badge">BDP</small>
+                        <div class="title">Bisnis & Pemasaran</div>
+                        <img src="img/smk17.png" alt="Logo SMK17" class="logo">
+                    </div>
+                </a>
+
+                <!-- PERHOTELAN -->
+                <a href="jurusan/perhotelan.html" class="card">
+                    <img src="img/siswa.jpeg" alt="Jurusan PH" class="card-image">
+                    <div class="content">
+                        <small class="badge">PH</small>
+                        <div class="title">Perhotelan</div>
+                        <img src="img/smk17.png" alt="Logo SMK17" class="logo">
+                    </div>
+                </a>
+
+                <!-- TKR -->
+                <a href="jurusan/tkr.html" class="card">
+                    <img src="img/siswa.jpeg" alt="Jurusan TKR" class="card-image">
+                    <div class="content">
+                        <small class="badge">TKR</small>
+                        <div class="title">Teknik Kendaraan Ringan</div>
+                        <img src="img/smk17.png" alt="Logo SMK17" class="logo">
+                    </div>
+                </a>
+
+                <!-- TP -->
+                <a href="jurusan/tp.html" class="card">
+                    <img src="img/siswa.jpeg" alt="Jurusan TP" class="card-image">
+                    <div class="content">
+                        <small class="badge">TP</small>
+                        <div class="title">Teknik Pengelasan</div>
+                        <img src="img/smk17.png" alt="Logo SMK17" class="logo">
+                    </div>
+                </a>
+
+            </div>
         </div>
-    </div>
-
+    </section>
     <!-- macam macam jurusan end -->
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
         crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
