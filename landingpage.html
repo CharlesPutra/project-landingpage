@@ -19,13 +19,14 @@
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="img/smk17.png" alt="Bootstrap" width="40" height="40">
+                SMK 17 AGUSTUS 1945 MUNCAR
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav ">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto gap-3">
                     <li class="nav-item">
                         <a class="nav-link " href="#home">Beranda</a>
                     </li>
@@ -35,9 +36,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Kontak</a>
                     </li>
+                    <a href="#" class="btn btn-primary custom-btn">Daftar</a>
                 </ul>
             </div>
-            <a href="" class="btn btn-danger ">Daftar</a>
 
         </div>
     </nav>
@@ -50,7 +51,6 @@
             <div class="image-container">
                 <img src="img/siswa.jpeg" class="img-fluid" alt="Siswa SMK">
                 <div class="image-text">Lorem ipsum dolor sit amet. <br>
-                    <button type="button" class="btn btn-danger btn-hover-transparent">Danger</button>
                 </div>
 
             </div>
@@ -104,7 +104,7 @@
         <!-- sponsor atau perusahaan yang sedang bekarja sama end -->
 
         <!-- berita atau pengumuman terbaru -->
-        <div class="container pt-5">
+        <div class="container text-center pt-5">
             <h2>Berita Terkini</h2>
             <div class="container my-4">
                 <div id="carouselMini" class="carousel slide mx-auto" data-bs-ride="carousel" data-bs-interval="3000"
@@ -144,17 +144,17 @@
                 </div>
             </div>
         </div>
-    </section>
-    <!-- berita atau pengumuman terbaru end -->
+
+        <!-- berita atau pengumuman terbaru end -->
 
 
 
-    <!-- sejarah sekolah   -->
-    <section id="tentang" class="py-5">
-        <div class="container">
+        <!-- sejarah sekolah   -->
+
+        <div class="container pt-5">
             <div class="row align-items-center">
                 <!-- Gambar Sekolah -->
-                <div class="col-md-6 mb-4 mb-md-0">
+                <div class="col-md-4 mb-4 mb-md-0">
                     <img src="img/smk17.png" alt="Sejarah Sekolah" class="img-fluid rounded shadow-sm">
                 </div>
 
@@ -172,20 +172,44 @@
                     <a href="#visi-misi" class="btn btn-primary mt-3">Lihat Visi & Misi</a>
                 </div>
             </div>
-        </div>
+        </div><br>
 
         <!-- sejarah sekolah  end -->
 
 
         <!-- struktur orgasisasi sekolah -->
+        <style>
+            .org-box {
+                background-color: #f8f9fa;
+                padding: 15px;
+                border-radius: 12px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                text-align: center;
+            }
+
+            .org-box img.img-org {
+                width: 80px;
+                height: 80px;
+                object-fit: cover;
+                border-radius: 50%;
+                margin-bottom: 10px;
+            }
+
+            .org-box.small-box img.img-org {
+                width: 70px;
+                height: 70px;
+            }
+        </style>
+
         <div class="container text-center pt-5">
             <h2 class="mb-4">Struktur Organisasi SMK 17 Muncar</h2>
 
             <!-- Kepala Sekolah -->
             <div class="mb-5">
                 <div class="org-box mx-auto">
+                    <img src="img/siswa.jpeg" alt="Kepala Sekolah" class="img-org">
                     <h5>Kepala Sekolah</h5>
-                    <p>Lorem, ipsum.</p>
+                    <p>Lorem.</p>
                 </div>
             </div>
 
@@ -193,20 +217,23 @@
             <div class="row justify-content-center mb-4">
                 <div class="col-md-3 mb-3">
                     <div class="org-box">
+                        <img src="img/siswa.jpeg" alt="Wakil Kepala Sekolah" class="img-org">
                         <h6>Wakil Kepala Sekolah</h6>
-                        <p>Lorem, ipsum.</p>
+                        <p>Lorem.</p>
                     </div>
                 </div>
                 <div class="col-md-3 mb-3">
                     <div class="org-box">
+                        <img src="img/siswa.jpeg" alt="Waka Kesiswaan" class="img-org">
                         <h6>Waka Kesiswaan</h6>
-                        <p>Lorem, ipsum dolor.</p>
+                        <p>Lorem.</p>
                     </div>
                 </div>
                 <div class="col-md-3 mb-3">
                     <div class="org-box">
+                        <img src="img/siswa.jpeg" alt="Waka Kurikulum" class="img-org">
                         <h6>Waka Kurikulum</h6>
-                        <p>Lorem ipsum dolor sit.</p>
+                        <p>Lorem.</p>
                     </div>
                 </div>
             </div>
@@ -215,224 +242,419 @@
             <div class="row justify-content-center">
                 <div class="col-md-2 mb-3">
                     <div class="org-box small-box">
+                        <img src="img/siswa.jpeg" alt="KA AKL" class="img-org">
                         <h6>KA. AKL</h6>
                         <p>Lorem.</p>
                     </div>
                 </div>
                 <div class="col-md-2 mb-3">
                     <div class="org-box small-box">
+                        <img src="img/siswa.jpeg" alt="KA RPL" class="img-org">
                         <h6>KA. RPL</h6>
-                        <p>Lorem ipsum</p>
+                        <p>Lorem.</p>
                     </div>
                 </div>
                 <div class="col-md-2 mb-3">
                     <div class="org-box small-box">
+                        <img src="img/siswa.jpeg" alt="KA BDP" class="img-org">
                         <h6>KA. BDP</h6>
-                        <p>Lorem ipsum</p>
+                        <p>Lorem.</p>
                     </div>
                 </div>
                 <div class="col-md-2 mb-3">
                     <div class="org-box small-box">
+                        <img src="img/siswa.jpeg" alt="KA PH" class="img-org">
                         <h6>KA. PH</h6>
-                        <p>Lorem, ipsum.</p>
+                        <p>Lorem.</p>
                     </div>
                 </div>
                 <div class="col-md-2 mb-3">
                     <div class="org-box small-box">
+                        <img src="img/siswa.jpeg" alt="KA TKR" class="img-org">
                         <h6>KA. TKR</h6>
-                        <p>Lorem ipsum</p>
+                        <p>Lorem.</p>
                     </div>
                 </div>
                 <div class="col-md-2 mb-3">
                     <div class="org-box small-box">
+                        <img src="img/siswa.jpeg" alt="KA TP" class="img-org">
                         <h6>KA. TP</h6>
-                        <p>Lorem ipsum</p>
+                        <p>Lorem.</p>
                     </div>
                 </div>
             </div>
         </div>
+
         <!-- struktur orgasisasi sekolah end -->
 
 
 
         <!-- card guru -->
-       <div class="container pt-5">
-  <h2 class="text-center">Guru/Karyawan</h2>
-</div>
+        <div class="guru-container pt-5">
+            <h2 class="text-center">Guru & Karyawan</h2>
 
-<!-- Baris Atas (Ke Kanan) -->
-<div class="marquee marquee-right">
-  <div class="marquee-content">
-    <!-- Ulang dua kali supaya loop -->
-    <div class="card-item"><img src="img/guru1.jpg" alt="Guru 1"><p>Bu Ani</p></div>
-    <div class="card-item"><img src="img/guru2.jpg" alt="Guru 2"><p>Pak Budi</p></div>
-    <div class="card-item"><img src="img/guru3.jpg" alt="Guru 3"><p>Bu Citra</p></div>
-    <div class="card-item"><img src="img/guru4.jpg" alt="Guru 4"><p>Pak Dedi</p></div>
-    <div class="card-item"><img src="img/guru1.jpg" alt="Guru 1"><p>Bu Ani</p></div>
-    <div class="card-item"><img src="img/guru2.jpg" alt="Guru 2"><p>Pak Budi</p></div>
-    <div class="card-item"><img src="img/guru3.jpg" alt="Guru 3"><p>Bu Citra</p></div>
-    <div class="card-item"><img src="img/guru4.jpg" alt="Guru 4"><p>Pak Dedi</p></div>
-    <div class="card-item"><img src="img/guru1.jpg" alt="Guru 1"><p>Bu Ani</p></div>
-    <div class="card-item"><img src="img/guru2.jpg" alt="Guru 2"><p>Pak Budi</p></div>
-    <div class="card-item"><img src="img/guru3.jpg" alt="Guru 3"><p>Bu Citra</p></div>
-    <div class="card-item"><img src="img/guru4.jpg" alt="Guru 4"><p>Pak Dedi</p></div>
-    <div class="card-item"><img src="img/guru1.jpg" alt="Guru 1"><p>Bu Ani</p></div>
-    <div class="card-item"><img src="img/guru2.jpg" alt="Guru 2"><p>Pak Budi</p></div>
-    <div class="card-item"><img src="img/guru3.jpg" alt="Guru 3"><p>Bu Citra</p></div>
-    <div class="card-item"><img src="img/guru4.jpg" alt="Guru 4"><p>Pak Dedi</p></div>
-    <div class="card-item"><img src="img/guru1.jpg" alt="Guru 1"><p>Bu Ani</p></div>
-    <div class="card-item"><img src="img/guru2.jpg" alt="Guru 2"><p>Pak Budi</p></div>
-    <div class="card-item"><img src="img/guru3.jpg" alt="Guru 3"><p>Bu Citra</p></div>
-    <div class="card-item"><img src="img/guru4.jpg" alt="Guru 4"><p>Pak Dedi</p></div>
-    <!-- Tambah sampai 20 -->
-    <!-- Ulangi lagi -->
-    <div class="card-item"><img src="img/guru1.jpg" alt="Guru 1"><p>Bu Ani</p></div>
-    <div class="card-item"><img src="img/guru2.jpg" alt="Guru 2"><p>Pak Budi</p></div>
-    <div class="card-item"><img src="img/guru3.jpg" alt="Guru 3"><p>Bu Citra</p></div>
-    <div class="card-item"><img src="img/guru4.jpg" alt="Guru 4"><p>Pak Dedi</p></div>
-    <div class="card-item"><img src="img/guru1.jpg" alt="Guru 1"><p>Bu Ani</p></div>
-    <div class="card-item"><img src="img/guru2.jpg" alt="Guru 2"><p>Pak Budi</p></div>
-    <div class="card-item"><img src="img/guru3.jpg" alt="Guru 3"><p>Bu Citra</p></div>
-    <div class="card-item"><img src="img/guru4.jpg" alt="Guru 4"><p>Pak Dedi</p></div>
-    <div class="card-item"><img src="img/guru1.jpg" alt="Guru 1"><p>Bu Ani</p></div>
-    <div class="card-item"><img src="img/guru2.jpg" alt="Guru 2"><p>Pak Budi</p></div>
-    <div class="card-item"><img src="img/guru3.jpg" alt="Guru 3"><p>Bu Citra</p></div>
-    <div class="card-item"><img src="img/guru4.jpg" alt="Guru 4"><p>Pak Dedi</p></div>
-    <div class="card-item"><img src="img/guru1.jpg" alt="Guru 1"><p>Bu Ani</p></div>
-    <div class="card-item"><img src="img/guru2.jpg" alt="Guru 2"><p>Pak Budi</p></div>
-    <div class="card-item"><img src="img/guru3.jpg" alt="Guru 3"><p>Bu Citra</p></div>
-    <div class="card-item"><img src="img/guru4.jpg" alt="Guru 4"><p>Pak Dedi</p></div>
-    <div class="card-item"><img src="img/guru1.jpg" alt="Guru 1"><p>Bu Ani</p></div>
-    <div class="card-item"><img src="img/guru2.jpg" alt="Guru 2"><p>Pak Budi</p></div>
-    <div class="card-item"><img src="img/guru3.jpg" alt="Guru 3"><p>Bu Citra</p></div>
-    <div class="card-item"><img src="img/guru4.jpg" alt="Guru 4"><p>Pak Dedi</p></div>
-    <!-- Tambah lagi sampai 20 -->
-  </div>
-</div>
-
-<!-- Baris Bawah (Ke Kiri) -->
-<div class="marquee marquee-left">
-  <div class="marquee-content">
-    <!-- 20 Card bawah -->
-    <div class="card-item"><img src="img/guru21.jpg" alt="Guru 21"><p>Bu Erna</p></div>
-    <div class="card-item"><img src="img/guru22.jpg" alt="Guru 22"><p>Pak Fikri</p></div>
-    <div class="card-item"><img src="img/guru23.jpg" alt="Guru 23"><p>Bu Gina</p></div>
-    <div class="card-item"><img src="img/guru24.jpg" alt="Guru 24"><p>Pak Heri</p></div>
-    <div class="card-item"><img src="img/guru21.jpg" alt="Guru 21"><p>Bu Erna</p></div>
-    <div class="card-item"><img src="img/guru22.jpg" alt="Guru 22"><p>Pak Fikri</p></div>
-    <div class="card-item"><img src="img/guru23.jpg" alt="Guru 23"><p>Bu Gina</p></div>
-    <div class="card-item"><img src="img/guru24.jpg" alt="Guru 24"><p>Pak Heri</p></div>
-    <div class="card-item"><img src="img/guru21.jpg" alt="Guru 21"><p>Bu Erna</p></div>
-    <div class="card-item"><img src="img/guru22.jpg" alt="Guru 22"><p>Pak Fikri</p></div>
-    <div class="card-item"><img src="img/guru23.jpg" alt="Guru 23"><p>Bu Gina</p></div>
-    <div class="card-item"><img src="img/guru24.jpg" alt="Guru 24"><p>Pak Heri</p></div>
-    <div class="card-item"><img src="img/guru21.jpg" alt="Guru 21"><p>Bu Erna</p></div>
-    <div class="card-item"><img src="img/guru22.jpg" alt="Guru 22"><p>Pak Fikri</p></div>
-    <div class="card-item"><img src="img/guru23.jpg" alt="Guru 23"><p>Bu Gina</p></div>
-    <div class="card-item"><img src="img/guru24.jpg" alt="Guru 24"><p>Pak Heri</p></div>
-    <div class="card-item"><img src="img/guru21.jpg" alt="Guru 21"><p>Bu Erna</p></div>
-    <div class="card-item"><img src="img/guru22.jpg" alt="Guru 22"><p>Pak Fikri</p></div>
-    <div class="card-item"><img src="img/guru23.jpg" alt="Guru 23"><p>Bu Gina</p></div>
-    <div class="card-item"><img src="img/guru24.jpg" alt="Guru 24"><p>Pak Heri</p></div>
-    <!-- Tambah sampai 20 -->
-    <!-- Ulangi lagi -->
-    <div class="card-item"><img src="img/guru21.jpg" alt="Guru 21"><p>Bu Erna</p></div>
-    <div class="card-item"><img src="img/guru22.jpg" alt="Guru 22"><p>Pak Fikri</p></div>
-    <div class="card-item"><img src="img/guru23.jpg" alt="Guru 23"><p>Bu Gina</p></div>
-    <div class="card-item"><img src="img/guru24.jpg" alt="Guru 24"><p>Pak Heri</p></div>
-    <div class="card-item"><img src="img/guru21.jpg" alt="Guru 21"><p>Bu Erna</p></div>
-    <div class="card-item"><img src="img/guru22.jpg" alt="Guru 22"><p>Pak Fikri</p></div>
-    <div class="card-item"><img src="img/guru23.jpg" alt="Guru 23"><p>Bu Gina</p></div>
-    <div class="card-item"><img src="img/guru24.jpg" alt="Guru 24"><p>Pak Heri</p></div>
-    <div class="card-item"><img src="img/guru21.jpg" alt="Guru 21"><p>Bu Erna</p></div>
-    <div class="card-item"><img src="img/guru22.jpg" alt="Guru 22"><p>Pak Fikri</p></div>
-    <div class="card-item"><img src="img/guru23.jpg" alt="Guru 23"><p>Bu Gina</p></div>
-    <div class="card-item"><img src="img/guru24.jpg" alt="Guru 24"><p>Pak Heri</p></div>
-    <div class="card-item"><img src="img/guru21.jpg" alt="Guru 21"><p>Bu Erna</p></div>
-    <div class="card-item"><img src="img/guru22.jpg" alt="Guru 22"><p>Pak Fikri</p></div>
-    <div class="card-item"><img src="img/guru23.jpg" alt="Guru 23"><p>Bu Gina</p></div>
-    <div class="card-item"><img src="img/guru24.jpg" alt="Guru 24"><p>Pak Heri</p></div>
-    <div class="card-item"><img src="img/guru21.jpg" alt="Guru 21"><p>Bu Erna</p></div>
-    <div class="card-item"><img src="img/guru22.jpg" alt="Guru 22"><p>Pak Fikri</p></div>
-    <div class="card-item"><img src="img/guru23.jpg" alt="Guru 23"><p>Bu Gina</p></div>
-    <div class="card-item"><img src="img/guru24.jpg" alt="Guru 24"><p>Pak Heri</p></div>
-    <!-- Tambah lagi sampai 20 -->
-  </div>
-</div>
-
-        <!-- card guru end -->
-
-        <!-- macam macam jurusan -->
-        <div class="container pt-5">
-            <h3>Macam-Macam Jurusan SMK17MUNCAR</h3><br>
-
-            <div class="card-wrapper">
-
-                <!-- AKL -->
-                <a href="jurusan/akl.html" class="card">
-                    <img src="img/siswa.jpeg" alt="Jurusan AKL" class="card-image">
-                    <div class="content">
-                        <small class="badge">AKUNTANSI</small>
-                        <div class="title">Akuntansi & Keuangan Lembaga</div>
-                        <img src="img/smk17.png" alt="Logo SMK17" class="logo">
+            <!-- Baris Atas (Ke Kanan) -->
+            <div class="marquee marquee-right">
+                <div class="marquee-track">
+                    <!-- Ulangi 20 card -->
+                    <!-- Ganti img src dan nama sesuai kebutuhan -->
+                    <!-- Duplikasi supaya loop berjalan mulus -->
+                    <div class="card-guru"><img src="img/siswa.jpeg">
+                        <p>Guru 1</p>
                     </div>
-                </a>
-
-                <!-- RPL -->
-                <a href="jurusan/rpl.html" class="card">
-                    <img src="img/siswa.jpeg" alt="Jurusan RPL" class="card-image">
-                    <div class="content">
-                        <small class="badge">RPL</small>
-                        <div class="title">Rekayasa Perangkat Lunak</div>
-                        <img src="img/smk17.png" alt="Logo SMK17" class="logo">
+                    <div class="card-guru"><img src="img/guru2.jpg">
+                        <p>Guru 2</p>
                     </div>
-                </a>
-
-                <!-- BDP -->
-                <a href="jurusan/bdp.html" class="card">
-                    <img src="img/siswa.jpeg" alt="Jurusan BDP" class="card-image">
-                    <div class="content">
-                        <small class="badge">BDP</small>
-                        <div class="title">Bisnis & Pemasaran</div>
-                        <img src="img/smk17.png" alt="Logo SMK17" class="logo">
+                    <div class="card-guru"><img src="img/guru3.jpg">
+                        <p>Guru 3</p>
                     </div>
-                </a>
-
-                <!-- PERHOTELAN -->
-                <a href="jurusan/perhotelan.html" class="card">
-                    <img src="img/siswa.jpeg" alt="Jurusan PH" class="card-image">
-                    <div class="content">
-                        <small class="badge">PH</small>
-                        <div class="title">Perhotelan</div>
-                        <img src="img/smk17.png" alt="Logo SMK17" class="logo">
+                    <div class="card-guru"><img src="img/guru4.jpg">
+                        <p>Guru 4</p>
                     </div>
-                </a>
-
-                <!-- TKR -->
-                <a href="jurusan/tkr.html" class="card">
-                    <img src="img/siswa.jpeg" alt="Jurusan TKR" class="card-image">
-                    <div class="content">
-                        <small class="badge">TKR</small>
-                        <div class="title">Teknik Kendaraan Ringan</div>
-                        <img src="img/smk17.png" alt="Logo SMK17" class="logo">
+                    <div class="card-guru"><img src="img/guru5.jpg">
+                        <p>Guru 5</p>
                     </div>
-                </a>
-
-                <!-- TP -->
-                <a href="jurusan/tp.html" class="card">
-                    <img src="img/siswa.jpeg" alt="Jurusan TP" class="card-image">
-                    <div class="content">
-                        <small class="badge">TP</small>
-                        <div class="title">Teknik Pengelasan</div>
-                        <img src="img/smk17.png" alt="Logo SMK17" class="logo">
+                    <div class="card-guru"><img src="img/guru6.jpg">
+                        <p>Guru 6</p>
                     </div>
-                </a>
+                    <div class="card-guru"><img src="img/guru7.jpg">
+                        <p>Guru 7</p>
+                    </div>
+                    <div class="card-guru"><img src="img/guru8.jpg">
+                        <p>Guru 8</p>
+                    </div>
+                    <div class="card-guru"><img src="img/guru9.jpg">
+                        <p>Guru 9</p>
+                    </div>
+                    <div class="card-guru"><img src="img/guru10.jpg">
+                        <p>Guru 10</p>
+                    </div>
+                    <div class="card-guru"><img src="img/guru11.jpg">
+                        <p>Guru 11</p>
+                    </div>
+                    <div class="card-guru"><img src="img/guru12.jpg">
+                        <p>Guru 12</p>
+                    </div>
+                    <div class="card-guru"><img src="img/guru13.jpg">
+                        <p>Guru 13</p>
+                    </div>
+                    <div class="card-guru"><img src="img/guru14.jpg">
+                        <p>Guru 14</p>
+                    </div>
+                    <div class="card-guru"><img src="img/guru15.jpg">
+                        <p>Guru 15</p>
+                    </div>
+                    <div class="card-guru"><img src="img/guru16.jpg">
+                        <p>Guru 16</p>
+                    </div>
+                    <div class="card-guru"><img src="img/guru17.jpg">
+                        <p>Guru 17</p>
+                    </div>
+                    <div class="card-guru"><img src="img/guru18.jpg">
+                        <p>Guru 18</p>
+                    </div>
+                    <div class="card-guru"><img src="img/guru19.jpg">
+                        <p>Guru 19</p>
+                    </div>
+                    <div class="card-guru"><img src="img/guru20.jpg">
+                        <p>Guru 20</p>
+                    </div>
 
+                    <!-- Duplikasi untuk animasi mulus -->
+                    <!-- COPY Ulang 20 card di atas -->
+                </div>
+            </div>
+
+            <!-- Baris Bawah (Ke Kiri) -->
+            <div class="marquee marquee-left">
+                <div class="marquee-track">
+                    <!-- Ulangi 20 card lainnya -->
+                    <div class="card-guru"><img src="img/guru21.jpg">
+                        <p>Guru 21</p>
+                    </div>
+                    <div class="card-guru"><img src="img/guru22.jpg">
+                        <p>Guru 22</p>
+                    </div>
+                    <div class="card-guru"><img src="img/guru23.jpg">
+                        <p>Guru 23</p>
+                    </div>
+                    <div class="card-guru"><img src="img/guru24.jpg">
+                        <p>Guru 24</p>
+                    </div>
+                    <div class="card-guru"><img src="img/guru25.jpg">
+                        <p>Guru 25</p>
+                    </div>
+                    <div class="card-guru"><img src="img/guru26.jpg">
+                        <p>Guru 26</p>
+                    </div>
+                    <div class="card-guru"><img src="img/guru27.jpg">
+                        <p>Guru 27</p>
+                    </div>
+                    <div class="card-guru"><img src="img/guru28.jpg">
+                        <p>Guru 28</p>
+                    </div>
+                    <div class="card-guru"><img src="img/guru29.jpg">
+                        <p>Guru 29</p>
+                    </div>
+                    <div class="card-guru"><img src="img/guru30.jpg">
+                        <p>Guru 30</p>
+                    </div>
+                    <div class="card-guru"><img src="img/guru31.jpg">
+                        <p>Guru 31</p>
+                    </div>
+                    <div class="card-guru"><img src="img/guru32.jpg">
+                        <p>Guru 32</p>
+                    </div>
+                    <div class="card-guru"><img src="img/guru33.jpg">
+                        <p>Guru 33</p>
+                    </div>
+                    <div class="card-guru"><img src="img/guru34.jpg">
+                        <p>Guru 34</p>
+                    </div>
+                    <div class="card-guru"><img src="img/guru35.jpg">
+                        <p>Guru 35</p>
+                    </div>
+                    <div class="card-guru"><img src="img/guru36.jpg">
+                        <p>Guru 36</p>
+                    </div>
+                    <div class="card-guru"><img src="img/guru37.jpg">
+                        <p>Guru 37</p>
+                    </div>
+                    <div class="card-guru"><img src="img/guru38.jpg">
+                        <p>Guru 38</p>
+                    </div>
+                    <div class="card-guru"><img src="img/guru39.jpg">
+                        <p>Guru 39</p>
+                    </div>
+                    <div class="card-guru"><img src="img/guru40.jpg">
+                        <p>Guru 40</p>
+                    </div>
+
+                    <!-- Duplikasi agar loop smooth -->
+                </div>
             </div>
         </div>
     </section>
-    <!-- macam macam jurusan end -->
+    <!-- card guru end -->
 
+    <!-- macam macam jurusan -->
+    <section id="tentang">
+        <div class="container pt-5">
+            <h3 class="text-center">Macam-Macam Jurusan</h3><br>
+
+            <div class="card-wrapper">
+                <!-- Card 1 -->
+                <a href="jurusan/akl.html" class="card">
+                    <div class="card-image-wrapper">
+                        <img src="img/siswa.jpeg" alt="Jurusan AKL" class="card-image">
+                        <small class="badge">AKUNTANSI</small>
+                    </div>
+                    <div class="content">
+                        <div class="title">Akuntansi & Keuangan Lembaga</div>
+                        <p class="desc">Mempelajari pembukuan, perpajakan, dan manajemen keuangan perusahaan.</p>
+                    </div>
+                </a>
+
+                <!-- Card 2 -->
+                <a href="jurusan/rpl.html" class="card">
+                    <div class="card-image-wrapper">
+                        <img src="img/rpl.jpg" alt="Jurusan RPL" class="card-image">
+                        <small class="badge">RPL</small>
+                    </div>
+                    <div class="content">
+                        <div class="title">Rekayasa Perangkat Lunak</div>
+                        <p class="desc">Fokus pada pembuatan aplikasi, website, dan sistem berbasis digital.</p>
+                    </div>
+                </a>
+
+                <!-- Card 3 -->
+                <a href="jurusan/bdp.html" class="card">
+                    <div class="card-image-wrapper">
+                        <img src="img/bdp.jpg" alt="Jurusan BDP" class="card-image">
+                        <small class="badge">BDP</small>
+                    </div>
+                    <div class="content">
+                        <div class="title">Bisnis Daring & Pemasaran</div>
+                        <p class="desc">Belajar strategi bisnis online, e-commerce, dan promosi produk digital.</p>
+                    </div>
+                </a>
+
+                <!-- Card 4 -->
+                <a href="jurusan/ph.html" class="card">
+                    <div class="card-image-wrapper">
+                        <img src="img/ph.jpg" alt="Jurusan PH" class="card-image">
+                        <small class="badge">PH</small>
+                    </div>
+                    <div class="content">
+                        <div class="title">Perhotelan</div>
+                        <p class="desc">Mengasah keterampilan pelayanan hotel, front office, dan housekeeping.</p>
+                    </div>
+                </a>
+
+                <!-- Card 5 -->
+                <a href="jurusan/tkr.html" class="card">
+                    <div class="card-image-wrapper">
+                        <img src="img/tkr.jpg" alt="Jurusan TKR" class="card-image">
+                        <small class="badge">TKR</small>
+                    </div>
+                    <div class="content">
+                        <div class="title">Teknik Kendaraan Ringan</div>
+                        <p class="desc">Mempelajari teknik perbaikan mesin, sistem kelistrikan, dan chasis mobil.</p>
+                    </div>
+                </a>
+
+                <!-- Card 6 -->
+                <a href="jurusan/tp.html" class="card">
+                    <div class="card-image-wrapper">
+                        <img src="img/tp.jpg" alt="Jurusan TP" class="card-image">
+                        <small class="badge">TP</small>
+                    </div>
+                    <div class="content">
+                        <div class="title">Teknik Pengelasan</div>
+                        <p class="desc">Belajar bubut, frais, CNC, dan teknik pemesinan presisi industri.</p>
+                    </div>
+                </a>
+            </div>
+
+
+        </div>
+        <!-- macam macam jurusan end -->
+
+        <!-- Kurikulum sekolah  -->
+        <div class="container pt-5">
+            <h2 class="section-title">Kurikulum Sekolah</h2>
+            <p class="section-desc">
+                Berikut adalah daftar mata pelajaran yang diajarkan di tiap jenjang kelas sesuai dengan kurikulum yang
+                berlaku di sekolah kami.
+            </p>
+
+            <div class="table-responsive">
+                <table class="kurikulum-table">
+                    <thead>
+                        <tr>
+                            <th>Mata Pelajaran</th>
+                            <th>Kelas X</th>
+                            <th>Kelas XI</th>
+                            <th>Kelas XII</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lorem, ipsum.</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem.</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem ipsum dolor sit.</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem, ipsum dolor.</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <td>Produktif (Jurusan)</td>
+                            <td>✓</td>
+                            <td>✓✓</td>
+                            <td>✓✓✓</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem, ipsum.</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                            <td>✓</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem ipsum dolor sit amet consectetur.</td>
+                            <td>✓</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <!-- Tambah mata pelajaran lainnya jika perlu -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- Kurikulum sekolah end -->
+
+        <!-- ektrakulikuler sekolah  -->
+        <div class="container pt-5">
+            <h2 class="section-title">Ekstrakurikuler Sekolah</h2>
+            <p class="section-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, ad nisi.
+            </p>
+
+            <div class="ekskul-grid">
+                <div class="ekskul-card">
+                    <img src="img/pramuka.jpg" alt="Pramuka">
+                    <div class="ekskul-content">
+                        <h3>Pramuka</h3>
+                        <p>Melatih kedisiplinan, kemandirian, dan jiwa kepemimpinan siswa.</p>
+                    </div>
+                </div>
+
+                <div class="ekskul-card">
+                    <img src="img/paskibra.jpg" alt="Paskibra">
+                    <div class="ekskul-content">
+                        <h3>Paskibra</h3>
+                        <p>Mengembangkan sikap nasionalisme dan tanggung jawab.</p>
+                    </div>
+                </div>
+
+                <div class="ekskul-card">
+                    <img src="img/siswa.jpeg" alt="Futsal">
+                    <div class="ekskul-content">
+                        <h3>Futsal</h3>
+                        <p>Menumbuhkan sportivitas dan kekompakan tim dalam olahraga.</p>
+                    </div>
+                </div>
+
+                <!-- Tambahkan lebih banyak ekstrakurikuler di sini -->
+            </div>
+        </div>
+        <!-- ektrakulikuler sekolah end -->
+
+
+        <!-- mt dan guru pengampu -->
+        <div class="container pt-5">
+            <h2 class="section-title">Mata Pelajaran & Guru Pengampu</h2>
+
+            <div class="mapel-grid">
+                <div class="mapel-card">
+                    <img src="img/guru1.jpg" alt="Bu Rina Wulandari" class="guru-photo">
+                    <h4>Matematika</h4>
+                    <p>Bu Rina Wulandari, S.Pd</p>
+                </div>
+
+                <div class="mapel-card">
+                    <img src="img/guru2.jpg" alt="Pak Haris Yudhistira" class="guru-photo">
+                    <h4>Bahasa Inggris</h4>
+                    <p>Pak Haris Yudhistira, M.Hum</p>
+                </div>
+
+                <div class="mapel-card">
+                    <img src="img/siswa.jpeg" alt="Bu Siti Aminah" class="guru-photo">
+                    <h4>Produktif TKJ</h4>
+                    <p>Bu Siti Aminah, S.Kom</p>
+                </div>
+
+                <!-- Tambahkan lebih banyak guru di sini -->
+            </div>
+        </div>
+        <!-- mt dan guru pengampu end -->
+
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"

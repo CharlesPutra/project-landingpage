@@ -1,17 +1,17 @@
   /* navbar */
-.navbar-custom.navbar-transparent {
-    background-color: transparent !important;
-    box-shadow: none !important;
-    transition: background-color 0.4s ease, box-shadow 0.4s ease;
-}
+  .navbar-custom.navbar-transparent {
+      background-color: transparent !important;
+      box-shadow: none !important;
+      transition: background-color 0.4s ease, box-shadow 0.4s ease;
+  }
 
-.navbar-custom {
-    background-color: #ffffff !important;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.4s ease, box-shadow 0.4s ease;
-     backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-}
+  .navbar-custom {
+      background-color: #ffffff !important;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.4s ease, box-shadow 0.4s ease;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+  }
 
 
   .navbar-brand {
@@ -63,13 +63,15 @@
       color: white;
   }
 
- .image-container img {
-    width: 100%;
-    height: 100vh; /* ini penting agar gambar full layar */
-    object-fit: cover;
-    opacity: 0.7;
-    border-radius: 0; /* jangan dibulatkan di atas */
-}
+  .image-container img {
+      width: 100%;
+      height: 100vh;
+      /* ini penting agar gambar full layar */
+      object-fit: cover;
+      opacity: 0.7;
+      border-radius: 0;
+      /* jangan dibulatkan di atas */
+  }
 
   .image-text {
       position: absolute;
@@ -88,37 +90,21 @@
   }
 
   /* img opacity wend */
-  
 
-.btn-danger {
-    transition: all 0.3s ease;
-}
-
-.btn-danger:hover {
-    background-color: transparent;
-    color: #dc3545;
-    border: 2px solid #dc3545;
-} 
   /* button hover */
-  .custom-hover:hover {
-      background-color: #c82333;
-      /* warna hover lebih gelap */
-      border-color: #bd2130;
-      color: #fff;
-      /* pastikan teks tetap terbaca */
-      transition: 0.3s;
-  }
-
-  .btn-hover-transparent {
+  .custom-btn {
       transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+      font-weight: 600;
+      padding: 10px 24px;
+      border-radius: 6px;
   }
 
-  /* Saat hover: background transparan, text dan border jadi warna merah */
-  .btn-hover-transparent:hover {
-      background-color: transparent;
-      color: #dc3545;
-      /* warna merah Bootstrap danger */
-      border: 1px solid #dc3545;
+  .custom-btn:hover {
+      background-color: #fff !important;
+      color: #007bff !important;
+      border: 2px solid #007bff !important;
+      box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
   }
 
   /* button hover end */
@@ -181,7 +167,7 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 20px;
-      justify-content: center;
+      padding: 20px;
   }
 
   .card {
@@ -190,60 +176,74 @@
       border-radius: 12px;
       overflow: hidden;
       box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s;
+      transition: transform 0.3s ease;
       text-decoration: none;
       color: inherit;
-      cursor: pointer;
-      height: 250px;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
   }
 
   .card:hover {
       transform: translateY(-5px);
   }
 
+  .card-image-wrapper {
+      position: relative;
+      width: 100%;
+      height: 150px;
+  }
+
   .card-image {
       width: 100%;
-      height: 120px;
+      height: 100%;
       object-fit: cover;
   }
 
-  .content {
-      padding: 10px;
-      text-align: center;
-  }
-
   .badge {
-      background-color: #20c997;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background-color: #0d6efd;
       color: white;
-      padding: 4px 8px;
+      padding: 5px 10px;
       border-radius: 12px;
       font-size: 12px;
-      display: inline-block;
-      margin-bottom: 5px;
+      z-index: 2;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  }
+
+  .content {
+      padding: 12px 15px;
+      text-align: center;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
   }
 
   .title {
-      font-size: 14px;
+      font-size: 15px;
       font-weight: bold;
       color: #343a40;
-      margin-top: 5px;
-      min-height: 36px;
+      margin-bottom: 8px;
+      min-height: 38px;
   }
 
-  .logo {
-      margin-top: 10px;
-      width: 30px;
-      height: 30px;
+  .desc {
+      font-size: 13px;
+      color: #666;
+      line-height: 1.4;
   }
 
-  /* Click Me Text on Hover */
+  /* Hover "Click Me" Overlay */
   .card::after {
       content: 'Click Me';
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      background-color: rgba(32, 201, 151, 0.9);
+      background-color: #0d6efd;
       color: white;
       padding: 8px 20px;
       font-size: 16px;
@@ -252,7 +252,7 @@
       opacity: 0;
       transition: opacity 0.3s ease;
       pointer-events: none;
-      z-index: 2;
+      z-index: 3;
   }
 
   .card:hover::after {
@@ -266,15 +266,14 @@
       background-color: rgba(0, 0, 0, 0.3);
       opacity: 0;
       transition: opacity 0.3s ease;
-      z-index: 1;
+      z-index: 2;
   }
 
   .card:hover::before {
       opacity: 1;
   }
 
-
-  /* Responsive Grid */
+  /* Responsive */
   @media (max-width: 992px) {
       .card-wrapper {
           grid-template-columns: repeat(2, 1fr);
@@ -292,145 +291,347 @@
 
   /* sejarah sekolah */
   .about-section {
-    background-color: #f8f9fa;
-}
+      background-color: #f8f9fa;
+  }
 
-.section-title {
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: #343a40;
-}
+  .section-title {
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #343a40;
+  }
 
-.about-section .btn {
-    transition: all 0.3s ease;
-}
+  .about-section .btn {
+      transition: all 0.3s ease;
+  }
 
-.about-section .btn:hover {
-    background-color: transparent;
-    color: #0d6efd;
-    border: 2px solid #0d6efd;
-}
+  .about-section .btn:hover {
+      background-color: transparent;
+      color: #0d6efd;
+      border: 2px solid #0d6efd;
+  }
 
   /* sejarah sekolah end */
 
 
-  /* struktur organisasi sekolah */
   .org-box {
-    background-color: #e9ecef;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
+      background-color: #f8f9fa;
+      padding: 15px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+  }
 
-.org-box:hover {
-    transform: translateY(-5px);
-}
+  .org-box img.img-org {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 10px;
+  }
 
-.org-box h5,
-.org-box h6 {
-    margin-bottom: 8px;
-    font-weight: bold;
-    color: #343a40;
-}
-
-.small-box {
-    padding: 15px;
-    font-size: 0.9rem;
-}
+  .org-box.small-box img.img-org {
+      width: 70px;
+      height: 70px;
+  }
 
   /* struktur organisasi sekolah end */
 
   /* card guru  */
-  body {
-  margin: 0;
-  font-family: sans-serif;
-  background-color: #f1f1f1;
-  /* padding: 20px; */
-}
-
-.running-cards {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-.marquee {
-  overflow: hidden;
-  white-space: nowrap;
-  width: 100%;
-  margin: 20px 0;
-}
-
-.marquee-content {
-  display: flex;
-  animation: scrollRight 30s linear infinite;
-}
-
-.marquee-left .marquee-content {
-  animation: scrollLeft 30s linear infinite;
-}
-
-@keyframes scrollRight {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
-
-@keyframes scrollLeft {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(50%); }
-}
-
-.card-item {
-  background: white;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  padding: 10px;
-  margin: 10px;
-  text-align: center;
-  width: 120px;
-  flex-shrink: 0;
-}
-
-.card-item img {
-  width: 100%;
-  height: 100px;
-  object-fit: cover;
-  border-radius: 6px;
-}
-
-.card-item p {
-  margin: 8px 0 0;
-  font-weight: bold;
-}
-
-
-/* Animasi ke kiri */
-.marquee-left .marquee-content {
-  animation: move-left 20s linear infinite;
-}
-
-/* Animasi ke kanan */
-.marquee-right .marquee-content {
-  animation: move-right 20s linear infinite;
-}
-
-@keyframes move-left {
-  0% { transform: translateX(100%); }
-  100% { transform: translateX(-100%); }
-}
-
-@keyframes move-right {
-  0% { transform: translateX(-100%); }
-  100% { transform: translateX(100%); }
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .card-item {
-    min-width: 100px;
-    height: 60px;
-    font-size: 14px;
+  .guru-container {
+      max-width: 100%;
+      padding: 40px 10px;
+      background-color: #f9f9f9;
   }
-}
+
+  .marquee {
+      overflow: hidden;
+      white-space: nowrap;
+      margin: 20px 0;
+  }
+
+  .marquee-track {
+      display: inline-flex;
+      animation: scroll-left 30s linear infinite;
+  }
+
+  .marquee-right .marquee-track {
+      animation: scroll-right 30s linear infinite;
+  }
+
+  .card-guru {
+      display: inline-block;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      margin: 0 10px;
+      padding: 10px;
+      min-width: 120px;
+  }
+
+  .card-guru img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 8px;
+  }
+
+  .card-guru p {
+      font-size: 14px;
+      margin: 0;
+  }
+
+  /* Animasi */
+  @keyframes scroll-left {
+      0% {
+          transform: translateX(0%);
+      }
+
+      100% {
+          transform: translateX(-50%);
+      }
+  }
+
+  @keyframes scroll-right {
+      0% {
+          transform: translateX(-50%);
+      }
+
+      100% {
+          transform: translateX(0%);
+      }
+  }
 
   /* card guru end */
+
+
+  /* kurikulum sekolah  */
+  .kurikulum-section {
+      background: #f8f9fa;
+      padding: 40px 20px;
+      font-family: 'Segoe UI', sans-serif;
+  }
+
+  .container {
+      max-width: 1000px;
+      margin: 0 auto;
+  }
+
+  .section-title {
+      font-size: 28px;
+      font-weight: 700;
+      text-align: center;
+      color: #343a40;
+      margin-bottom: 10px;
+  }
+
+  .section-desc {
+      text-align: center;
+      font-size: 15px;
+      color: #666;
+      margin-bottom: 30px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  .table-responsive {
+      overflow-x: auto;
+  }
+
+  .kurikulum-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+
+  .kurikulum-table th,
+  .kurikulum-table td {
+      padding: 12px 16px;
+      border: 1px solid #dee2e6;
+      text-align: center;
+  }
+
+  .kurikulum-table th {
+      background-color: #007bff;
+      color: white;
+      font-weight: 600;
+  }
+
+  .kurikulum-table td {
+      color: #495057;
+      background-color: #fff;
+  }
+
+  .kurikulum-table tr:nth-child(even) td {
+      background-color: #f1f3f5;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+      .section-title {
+          font-size: 22px;
+      }
+
+      .section-desc {
+          font-size: 14px;
+      }
+
+      .kurikulum-table th,
+      .kurikulum-table td {
+          padding: 10px;
+          font-size: 13px;
+      }
+  }
+
+  /* kurikulum sekolah end */
+
+  /* ekstrakulikuler sekolah  */
+  .ekskul-section {
+      background: #f8f9fa;
+      padding: 50px 20px;
+      font-family: 'Segoe UI', sans-serif;
+  }
+
+  .container {
+      max-width: 1200px;
+      margin: auto;
+  }
+
+  .section-title {
+      text-align: center;
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: #343a40;
+  }
+
+  .section-desc {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 40px;
+      font-size: 15px;
+      color: #555;
+  }
+
+  .ekskul-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+  }
+
+  .ekskul-card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+  }
+
+  .ekskul-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  }
+
+  .ekskul-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+  }
+
+  .ekskul-content {
+      padding: 15px;
+      text-align: center;
+  }
+
+  .ekskul-content h3 {
+      margin: 10px 0 5px;
+      font-size: 18px;
+      color: #007bff;
+  }
+
+  .ekskul-content p {
+      font-size: 14px;
+      color: #555;
+  }
+
+  /* Responsive */
+  @media (max-width: 992px) {
+      .ekskul-grid {
+          grid-template-columns: repeat(2, 1fr);
+      }
+  }
+
+  @media (max-width: 600px) {
+      .ekskul-grid {
+          grid-template-columns: 1fr;
+      }
+
+      .section-title {
+          font-size: 22px;
+      }
+  }
+
+  /* ekstrakulikuler sekolah end */
+
+  /* mepel dan guru pengampu */
+  .mapel-card-section {
+      padding: 50px 20px;
+      background-color: #fff;
+  }
+
+  .section-title {
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 30px;
+      color: #343a40;
+  }
+
+  .mapel-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+  }
+
+  .mapel-card {
+      background: #f8f9fa;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      border: 1px solid #dee2e6;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.04);
+      transition: transform 0.2s;
+  }
+
+  .mapel-card:hover {
+      transform: translateY(-5px);
+  }
+
+  .guru-photo {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 15px;
+      border: 3px solid #007bff;
+  }
+
+  .mapel-card h4 {
+      color: #007bff;
+      margin-bottom: 6px;
+      font-size: 18px;
+  }
+
+  .mapel-card p {
+      color: #555;
+      font-size: 14px;
+      margin: 0;
+  }
+
+  /* mepel dan guru pengampu end */
