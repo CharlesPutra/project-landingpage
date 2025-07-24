@@ -87,6 +87,9 @@
       .image-text {
           font-size: 1.4rem;
       }
+      .navbar-brand {
+        font-size: small;
+      }
   }
 
   /* img opacity wend */
@@ -635,3 +638,265 @@
   }
 
   /* mepel dan guru pengampu end */
+
+  /* alur pendaftaran */
+  .alur-ppdb-section {
+      padding: 60px 20px;
+      background-color: #f8f9fa;
+  }
+
+  .section-title {
+      font-size: 30px;
+      font-weight: bold;
+      color: #343a40;
+  }
+
+  .alur-box {
+      background: #ffffff;
+      border: 1px solid #dee2e6;
+      border-radius: 12px;
+      padding: 25px 20px;
+      text-align: center;
+      transition: transform 0.3s;
+      height: 100%;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  }
+
+  .alur-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+  }
+
+  .alur-box .number {
+      width: 50px;
+      height: 50px;
+      background-color: #007bff;
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 15px auto;
+  }
+
+  .alur-box h5 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: #007bff;
+  }
+
+  .alur-box p {
+      font-size: 14px;
+      color: #555;
+  }
+
+  /* alur pendaftaran end */
+
+  /* persyaratan pendaftaran PPDP */
+  .ppdb-card {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 30px 20px;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+      transition: all 0.3s ease;
+      height: 100%;
+  }
+
+  .ppdb-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+  }
+
+  .ppdb-card i {
+      font-size: 38px;
+      color: #0d6efd;
+      margin-bottom: 15px;
+  }
+
+  .ppdb-card h5 {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 10px;
+  }
+
+  .ppdb-card p {
+      font-size: 14px;
+      color: #666;
+  }
+
+  .btn-primary:hover {
+      background-color: #0056d2;
+      border-color: #004cbf;
+  }
+
+  /* persyaratan pendaftaran PPDP end */
+
+
+  /* lokasi atau map google sekolah */
+  .map-responsive {
+      overflow: hidden;
+      padding-bottom: 56.25%;
+      /* 16:9 aspect ratio */
+      position: relative;
+      height: 0;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .map-responsive iframe {
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      border: none;
+      border-radius: 12px;
+  }
+
+  /* lokasi atau map google sekolah end */
+
+
+  /* kontak panitia ppdp */
+  .kontak-modern {
+      background: #f8f9fa;
+  }
+
+  .kontak-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  }
+
+  .kontak-item {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 20px;
+  }
+
+  .kontak-item i {
+      font-size: 28px;
+      color: #0d6efd;
+      background-color: #eaf4ff;
+      padding: 12px;
+      border-radius: 50%;
+  }
+
+  .kontak-item h5 {
+      margin: 0;
+      font-weight: 600;
+  }
+
+  .kontak-item p {
+      margin: 0;
+      color: #555;
+  }
+
+  .kontak-item a {
+      text-decoration: none;
+      color: #0d6efd;
+  }
+
+  .form-card {
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  }
+
+  .form-group label {
+      font-weight: 500;
+      margin-bottom: 6px;
+      display: block;
+  }
+
+  /* kontak panitia ppdp end */
+
+
+  /* footer web */
+ .footer-modern {
+  background-color: #0d1b2a;
+  color: #ffffff;
+  padding: 30px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer-brand h4 {
+  margin: 0;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.footer-brand p {
+  margin: 0;
+  font-size: 14px;
+  color: #adb5bd;
+}
+
+.footer-logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  /* border: 2px solid #ffffff; */
+}
+
+.footer-social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1b263b;
+  color: #ffffff;
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  border-radius: 50%;
+  font-size: 18px;
+  transition: background-color 0.3s, transform 0.3s;
+  text-decoration: none;
+}
+
+.footer-social a:hover {
+  background-color: #0d6efd;
+  color: white;
+  transform: scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-brand {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-social a {
+    margin: 10px 8px 0;
+  }
+}
+
+  /* footer web end */

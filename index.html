@@ -10,11 +10,21 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+     <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+
 </head>
 
 <body>
     <!-- navbar  -->
-    <nav class="navbar navbar-expand-lg navbar-custom navbar-transparent sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-custom navbar-transparent sticky-top animate__animated animate__backInDown">
 
         <div class="container">
             <a class="navbar-brand" href="#">
@@ -34,7 +44,7 @@
                         <a class="nav-link" href="#tentang">Tentang</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Kontak</a>
+                        <a class="nav-link" href="#PPDP">PPDP</a>
                     </li>
                     <a href="#" class="btn btn-primary custom-btn">Daftar</a>
                 </ul>
@@ -47,7 +57,7 @@
     <!-- img opacity -->
     <section id="home">
 
-        <div class="home-section">
+        <div class="home-section animate__animated animate__backInUp">
             <div class="image-container">
                 <img src="img/siswa.jpeg" class="img-fluid" alt="Siswa SMK">
                 <div class="image-text">Lorem ipsum dolor sit amet. <br>
@@ -104,7 +114,7 @@
         <!-- sponsor atau perusahaan yang sedang bekarja sama end -->
 
         <!-- berita atau pengumuman terbaru -->
-        <div class="container text-center pt-5">
+        <div class="container text-center pt-5" data-aos="fade-up"  data-aos-duration="3000">
             <h2>Berita Terkini</h2>
             <div class="container my-4">
                 <div id="carouselMini" class="carousel slide mx-auto" data-bs-ride="carousel" data-bs-interval="3000"
@@ -154,12 +164,12 @@
         <div class="container pt-5">
             <div class="row align-items-center">
                 <!-- Gambar Sekolah -->
-                <div class="col-md-4 mb-4 mb-md-0">
+                <div class="col-md-4 mb-4 mb-md-0" data-aos="fade-right" data-aos-duration="3000">
                     <img src="img/smk17.png" alt="Sejarah Sekolah" class="img-fluid rounded shadow-sm">
                 </div>
 
                 <!-- Konten Sejarah -->
-                <div class="col-md-6">
+                <div class="col-md-6" data-aos="fade-left" data-aos-duration="3000">
                     <h2 class="section-title">Sejarah SMK 17 Muncar</h2>
                     <p class="lead text-muted">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, voluptatibus quasi.
@@ -437,14 +447,38 @@
     </section>
     <!-- card guru end -->
 
-    <!-- macam macam jurusan -->
     <section id="tentang">
+
+
+        <!-- lokasi atau map sekolah  -->
+        <div class="container">
+            <div class="text-center mb-4">
+                <h2 class="fw-bold">Lokasi Sekolah</h2>
+                <p class="text-muted">Berikut adalah lokasi sekolah kami yang bisa Anda kunjungi langsung.</p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <div class="map-responsive">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3946.7153557659562!2d114.30428177365097!3d-8.429588991609723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd3fce1b12f870f%3A0x534d1a151bd9cf90!2sSMK%2017%20AGUSTUS%201945%20MUNCAR!5e0!3m2!1sid!2sid!4v1753327285661!5m2!1sid!2sid"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- lokasi atau map sekolah end -->
+
+
+
+        <!-- macam macam jurusan -->
         <div class="container pt-5">
             <h3 class="text-center">Macam-Macam Jurusan</h3><br>
 
             <div class="card-wrapper">
                 <!-- Card 1 -->
-                <a href="jurusan/akl.html" class="card">
+                <a href="akl.html" class="card">
                     <div class="card-image-wrapper">
                         <img src="img/siswa.jpeg" alt="Jurusan AKL" class="card-image">
                         <small class="badge">AKUNTANSI</small>
@@ -456,7 +490,7 @@
                 </a>
 
                 <!-- Card 2 -->
-                <a href="jurusan/rpl.html" class="card">
+                <a href="rpl.html" class="card">
                     <div class="card-image-wrapper">
                         <img src="img/rpl.jpg" alt="Jurusan RPL" class="card-image">
                         <small class="badge">RPL</small>
@@ -468,7 +502,7 @@
                 </a>
 
                 <!-- Card 3 -->
-                <a href="jurusan/bdp.html" class="card">
+                <a href="bdp.html" class="card">
                     <div class="card-image-wrapper">
                         <img src="img/bdp.jpg" alt="Jurusan BDP" class="card-image">
                         <small class="badge">BDP</small>
@@ -480,7 +514,7 @@
                 </a>
 
                 <!-- Card 4 -->
-                <a href="jurusan/ph.html" class="card">
+                <a href="ph.html" class="card">
                     <div class="card-image-wrapper">
                         <img src="img/ph.jpg" alt="Jurusan PH" class="card-image">
                         <small class="badge">PH</small>
@@ -492,19 +526,19 @@
                 </a>
 
                 <!-- Card 5 -->
-                <a href="jurusan/tkr.html" class="card">
+                <a href="tkr.html" class="card">
                     <div class="card-image-wrapper">
-                        <img src="img/tkr.jpg" alt="Jurusan TKR" class="card-image">
-                        <small class="badge">TKR</small>
+                        <img src="img/tkr.jpg" alt="Jurusan TKRO" class="card-image">
+                        <small class="badge">TKRO</small>
                     </div>
                     <div class="content">
-                        <div class="title">Teknik Kendaraan Ringan</div>
+                        <div class="title">Teknik Kendaraan Ringan Otomotif</div>
                         <p class="desc">Mempelajari teknik perbaikan mesin, sistem kelistrikan, dan chasis mobil.</p>
                     </div>
                 </a>
 
                 <!-- Card 6 -->
-                <a href="jurusan/tp.html" class="card">
+                <a href="tp.html" class="card">
                     <div class="card-image-wrapper">
                         <img src="img/tp.jpg" alt="Jurusan TP" class="card-image">
                         <small class="badge">TP</small>
@@ -628,25 +662,25 @@
 
         <!-- mt dan guru pengampu -->
         <div class="container pt-5">
-            <h2 class="section-title">Mata Pelajaran & Guru Pengampu</h2>
+            <h2 class="section-title">Guru Pengampu Mata Pelajaran</h2>
 
             <div class="mapel-grid">
                 <div class="mapel-card">
-                    <img src="img/guru1.jpg" alt="Bu Rina Wulandari" class="guru-photo">
-                    <h4>Matematika</h4>
-                    <p>Bu Rina Wulandari, S.Pd</p>
+                    <img src="img/guru1.jpg" alt="" class="guru-photo">
+                    <h4>Lorem.</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
                 </div>
 
                 <div class="mapel-card">
-                    <img src="img/guru2.jpg" alt="Pak Haris Yudhistira" class="guru-photo">
-                    <h4>Bahasa Inggris</h4>
-                    <p>Pak Haris Yudhistira, M.Hum</p>
+                    <img src="img/guru2.jpg" alt="" class="guru-photo">
+                    <h4>Lorem, ipsum dolor.</h4>
+                    <p>Lorem ipsum dolor sit amet.</p>
                 </div>
 
                 <div class="mapel-card">
-                    <img src="img/siswa.jpeg" alt="Bu Siti Aminah" class="guru-photo">
-                    <h4>Produktif TKJ</h4>
-                    <p>Bu Siti Aminah, S.Kom</p>
+                    <img src="img/siswa.jpeg" alt="" class="guru-photo">
+                    <h4>Lorem ipsum dolor sit.</h4>
+                    <p>Lorem, ipsum dolor.</p>
                 </div>
 
                 <!-- Tambahkan lebih banyak guru di sini -->
@@ -656,10 +690,233 @@
 
     </section>
 
+
+    <section id="PPDP">
+        <!-- alur pendaftaran ppdp -->
+        <div class="container pt-5">
+            <h2 class="section-title text-center mb-5">Alur Pendaftaran PPDB</h2>
+
+            <div class="row justify-content-center g-4">
+                <div class="col-md-3 col-sm-6">
+                    <div class="alur-box">
+                        <div class="number">1</div>
+                        <h5>Isi Formulir Online</h5>
+                        <p>Calon siswa mengisi data diri melalui formulir pendaftaran yang tersedia di website sekolah.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="alur-box">
+                        <div class="number">2</div>
+                        <h5>Verifikasi Data</h5>
+                        <p>Pihak sekolah akan melakukan pengecekan kelengkapan dan kebenaran data pendaftar.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="alur-box">
+                        <div class="number">3</div>
+                        <h5>Ujian Seleksi</h5>
+                        <p>Pendaftar mengikuti tes seleksi (jika ada) sesuai dengan jadwal yang telah ditentukan.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="alur-box">
+                        <div class="number">4</div>
+                        <h5>Pengumuman</h5>
+                        <p>Hasil seleksi diumumkan melalui website atau papan pengumuman di sekolah.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="alur-box">
+                        <div class="number">5</div>
+                        <h5>Daftar Ulang</h5>
+                        <p>Peserta yang lulus seleksi melakukan daftar ulang dan menyerahkan berkas yang dibutuhkan.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- alur pendaftaran ppdp end -->
+
+
+        <!-- persyaratan pendaftaran PPDP -->
+        <div class="container pt-5">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Persyaratan Pendaftaran PPDB Online</h2>
+                <p class="text-muted">Pastikan Anda menyiapkan berkas digital sesuai format yang ditentukan sebelum
+                    melakukan pendaftaran.</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Syarat 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="ppdb-card">
+                        <i class="bi bi-file-earmark-text"></i>
+                        <h5>Formulir Online</h5>
+                        <p>Isi formulir pendaftaran secara online melalui website resmi kami.</p>
+                    </div>
+                </div>
+
+                <!-- Syarat 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="ppdb-card">
+                        <i class="bi bi-card-image"></i>
+                        <h5>Pas Foto 3x4</h5>
+                        <p>Upload pas foto terbaru ukuran 3x4 (format JPG/PNG, max 1MB).</p>
+                    </div>
+                </div>
+
+                <!-- Syarat 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="ppdb-card">
+                        <i class="bi bi-file-earmark-richtext"></i>
+                        <h5>Scan Ijazah / SKL</h5>
+                        <p>Unggah scan ijazah atau Surat Keterangan Lulus dari sekolah asal.</p>
+                    </div>
+                </div>
+
+                <!-- Syarat 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="ppdb-card">
+                        <i class="bi bi-people"></i>
+                        <h5>Kartu Keluarga</h5>
+                        <p>Upload kartu keluarga untuk keperluan verifikasi domisili.</p>
+                    </div>
+                </div>
+
+                <!-- Syarat 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="ppdb-card">
+                        <i class="bi bi-person-badge"></i>
+                        <h5>KTP Orang Tua</h5>
+                        <p>Upload KTP orang tua atau wali sebagai identitas pendamping.</p>
+                    </div>
+                </div>
+
+                <!-- Syarat 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="ppdb-card">
+                        <i class="bi bi-upload"></i>
+                        <h5>Upload Berkas</h5>
+                        <p>Pastikan semua dokumen diunggah melalui portal pendaftaran online.</p>
+                    </div>
+                </div>
+                <div class="text-center mt-3">
+                    <a href="https://link-ppdb-online.com" class="btn btn-primary btn-lg custom-btn shadow-sm" id="bt">
+                        Daftar Sekarang
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- persyaratan pendaftaran PPDP end -->
+
+        <!-- kontak panitia ppdp -->
+        <div class="container pt-5">
+            <h2 class="text-center mb-4">Hubungi Panitia PPDB</h2>
+            <p class="text-center text-muted mb-5">Jika ada pertanyaan seputar pendaftaran, silakan hubungi kami melalui
+                kontak berikut atau kirim pesan langsung.</p>
+
+            <div class="row gy-4">
+                <!-- Informasi Kontak -->
+                <div class="col-md-6">
+                    <div class="kontak-card">
+                        <div class="kontak-item">
+                            <i class="fas fa-user-circle"></i>
+                            <div>
+                                <h5>Nama Panitia</h5>
+                                <p>Lorem, ipsum dolor.</p>
+                            </div>
+                        </div>
+                        <div class="kontak-item">
+                            <i class="fab fa-whatsapp"></i>
+                            <div>
+                                <h5>WhatsApp</h5>
+                                <p><a href="https://wa.me/6281234567890">+62 812-3456-7890</a></p>
+                            </div>
+                        </div>
+                        <div class="kontak-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h5>Email</h5>
+                                <p><a href="mailto:ppdb@smk17muncar.sch.id">ppdb@smk17muncar.sch.id</a></p>
+                            </div>
+                        </div>
+                        <div class="kontak-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h5>Jam Operasional</h5>
+                                <p>Senin - Jumat, 08.00 - 15.00 WIB</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Kontak -->
+                <div class="col-md-6">
+                    <div class="form-card">
+                        <form>
+                            <div class="form-group mb-3">
+                                <label for="nama">Nama Lengkap</label>
+                                <input type="text" id="nama" class="form-control" required placeholder="Nama Anda">
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="kontak">Email / No. WhatsApp</label>
+                                <input type="text" id="kontak" class="form-control" required
+                                    placeholder="Email atau WA Anda">
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="pesan">Pesan</label>
+                                <textarea id="pesan" rows="4" class="form-control" required
+                                    placeholder="Tulis pertanyaan Anda..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Kirim Pesan</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- kontak panitia ppdp end -->
+
+    </section>
+    <hr>
+
+    <!-- footer web -->
+    <footer class="footer-modern">
+        <div class="footer-container">
+            <!-- Brand + Logo -->
+            <div class="footer-brand">
+                <img src="img/smk17.png" alt="Logo Sekolah" class="footer-logo">
+                <div>
+                    <h4>
+                        SMK 17 AGUSTUS 1945 MUNCAR</h4>
+                    <p>&copy; 2025 All rights reserved.</p>
+                </div>
+            </div>
+
+            <!-- Sosial Media -->
+            <div class="footer-social">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- footer web end -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
         crossorigin="anonymous"></script>
     <script src="script.js"></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
