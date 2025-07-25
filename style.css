@@ -655,8 +655,7 @@ a.card:hover {
   /* Responsive */
   @media (max-width: 992px) {
       .ekskul-grid {
-          /* grid-template-columns: repeat(2, 1fr); */
-          grid-template-columns: 1fr;
+          grid-template-columns: repeat(2, 1fr);
       }
   }
 
@@ -669,6 +668,43 @@ a.card:hover {
           font-size: 22px;
       }
   }
+  @media (max-width: 576px) {
+  .ekskul-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .ekskul-card {
+    transform: scale(0.95); /* ukuran card diperkecil sedikit */
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .ekskul-content h3 {
+    font-size: 15px;
+  }
+
+  .ekskul-content p {
+    font-size: 12.5px;
+  }
+
+  .ekskul-card img {
+    height: 140px;
+  }
+
+  .section-title {
+    font-size: 20px;
+  }
+
+  .section-desc {
+    font-size: 13.5px;
+  }
+
+  .container {
+    padding: 0 10px;
+  }
+}
+
 
   /* ekstrakulikuler sekolah end */
 
