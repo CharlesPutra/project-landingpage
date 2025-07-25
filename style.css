@@ -59,51 +59,48 @@
   /* img opacity */
   /* Container gambar */
   .image-container {
-      position: relative;
-      width: 100%;
-      height: 100vh;
-      overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 60vh; /* default untuk layar besar */
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* tetap memenuhi area */
+  opacity: 0.7;
+  border-radius: 0;
+}
+
+/* Teks di tengah gambar */
+.image-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* Responsive untuk smartphone */
+@media (max-width: 576px) {
+  .image-container {
+    height: 40vh; /* lebih pendek di HP */
   }
 
-  /* Gambar full layar dengan transparansi */
-  .image-container img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      opacity: 0.7;
-      border-radius: 0;
-  }
-
-  /* Teks di tengah gambar */
   .image-text {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-size: 2.5rem;
-      font-weight: bold;
-      color: white;
-      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
-      padding: 0 15px;
-      max-width: 90%;
+    font-size: 1.2rem; /* teks lebih kecil */
+    padding: 0 10px;
   }
 
-  /* Responsiveness */
-  @media (max-width: 768px) {
-      .image-text {
-          font-size: 1.8rem;
-      }
+  .navbar-brand {
+    font-size: small;
   }
+}
 
-  @media (max-width: 576px) {
-      .image-text {
-          font-size: 1.4rem;
-      }
-
-      .navbar-brand {
-          font-size: small;
-      }
-  }
 
   /* img opacity wend */
 
