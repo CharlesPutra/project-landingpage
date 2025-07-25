@@ -290,6 +290,18 @@
   .card:hover::before {
       opacity: 1;
   }
+  a.card {
+    display: block;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+a.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
 
   /* Responsive */
   @media (max-width: 992px) {
@@ -456,6 +468,12 @@
       margin: 0;
   }
 
+  .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      transition: all 0.3s ease;
+  }
+
   /* Animasi */
   @keyframes scroll-left {
       0% {
@@ -481,7 +499,7 @@
 
 
   /* kurikulum sekolah  */
-  .kurikulum-section {
+  /* .kurikulum-section {
       background: #f8f9fa;
       padding: 40px 20px;
       font-family: 'Segoe UI', sans-serif;
@@ -545,7 +563,7 @@
       background-color: #f1f3f5;
   }
 
-  /* Responsive adjustments */
+ 
   @media (max-width: 600px) {
       .section-title {
           font-size: 22px;
@@ -560,7 +578,7 @@
           padding: 10px;
           font-size: 13px;
       }
-  }
+  } */
 
   /* kurikulum sekolah end */
 
