@@ -18,7 +18,7 @@ document.getElementById('konsulform').addEventListener('submit', function (e) {
     const noPanitia = "6282337631513";
 
     const message =
-        `*Pendaftaran PPDB SMK 17 Muncar*\n\n` +
+        `*Konsultasi PPDB SMK 17 Muncar*\n\n` +
         `📌 *Nama:* ${nama}\n` +
         `📌 *EMAIL/NO WA:* ${kontak}\n` +
         `📌 *PESAN:* ${pesan}\n`
